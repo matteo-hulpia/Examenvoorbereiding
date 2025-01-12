@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dit is een voorbeeldpagina HTML als voorbereiding voor mijn examen.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoofdstuk 4</title>
+    <link rel="icon" href="../../Icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <h1>Afbeeldingen:</h1>
+</header>
+    <img src="../hoofdstuk1/Afbeeldingen/TVw.png" alt="Tradingview" width="225">
+    <picture>
+        <source srcset="../hoofdstuk1/Afbeeldingen/TVw.png" media="(max-width:100px)">
+        <source srcset="../hoofdstuk1/Afbeeldingen/TVw.png" media="(min-width:150px)">
+        <img src="Afbeelding/Fallback.jpg" alt="Fallback picture">
+    </picture>
+
+
+<main>
+    <section>
+        <h2>Invulformulier</h2>
+            <form action="#" method="post">
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam" required>
+                <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                <br>
+                    <label for="trading_pair">Welk paar wenst u te traden</label>
+                    <select id="trading_pair" name="trading_pair">
+                    <option value="" disabled selected>Selecteer een optie</option>
+                    <option value="AUX/USD">AUX/USD</option>
+                    <option value="GBP/JPY">GBP/JPY</option>
+                    <option value="EUR/USD">EUR/USD</option>
+                    </select>
+                <br>
+                    <label for="ervaring">Vertel over uw ervaring:</label> <br/>
+                    <textarea id="ervaring" name="ervaring" rows="4" cols="50"></textarea>
+                <br>
+                    <label>
+                        <input type="checkbox" name="voorwaarden" required> Ik accepteer de voorwaarden.
+                    </label>
+                <br>
+                <button type="submit">Verzenden</button>
+            </form>
+    </section>
+    <aside>
+        <h2>Extra informatie</h2>
+        <p>Neem contact op voor meer informatie.</p>
+    </aside>
+</main>
+
+
+<footer>
+    <p>&copy; 2025 Mijn Webpagina</p>
+<a href="#">Terug naar hoofdpagina</a>
+<br/>
+<a href="../hoofdstuk3/index.html">Terug</a>
+</footer>
+</body>
+</html>

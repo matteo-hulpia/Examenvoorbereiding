@@ -1,0 +1,46 @@
+html, body {
+    height: 100%; /* Zorg dat de pagina altijd 100% van het venster inneemt */
+    margin: 0; /* Verwijder standaard marges */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Zorg dat de inhoud en footer onder elkaar staan */
+}
+
+header {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+main {
+    flex: 1; /* Laat de hoofdinhoud de resterende ruimte innemen */
+    background-color: lightblue;
+    text-align: center;
+}
+
+footer {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header ul{
+    list-style: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.uitleg {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
